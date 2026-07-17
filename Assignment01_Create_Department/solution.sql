@@ -1,4 +1,4 @@
--- Write your SQL here
+CREATE DATABASE CollegeDBBCA;-- Write your SQL here
 
 -- Create Database
 
