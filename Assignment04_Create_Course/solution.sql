@@ -1,6 +1,3 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
 USE collegeDBBCA;
 CREATE TABLE Course (courseID VARCHAR(20),credits INT(20) PRIMARY KEY,DepartmentID VARCHAR(20));
 INSERT INTO Course(courseID,courseName,credits,DepartmentID) VALUES (10,"BCA",12,1);
