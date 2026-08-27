@@ -1,12 +1,16 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
+CREATE TABLE Student (
+    StudentID INT,
+    StudentName VARCHAR(50),
+    DepartmentID INT
+);
 
-
--- Create Department
-
--- Create Student
-
--- Insert sample records
-
--- INNER JOIN query
+INSERT INTO Student VALUES
+(1001, 'Arun', 101),
+(1002, 'Divya', 102),
+(1003, 'Karthik', 101),
+(1004, 'Nisha', 103);
+INNER JOIN Query
+SELECT Student.StudentName, Department.DepartmentName
+FROM Student
+INNER JOIN Department
+ON Student.DepartmentID = Department.DepartmentID;
