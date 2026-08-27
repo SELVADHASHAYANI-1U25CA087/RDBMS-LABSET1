@@ -1,16 +1,3 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
-
-CREATE TABLE Student(
-    StudentID INT(5) PRIMARY KEY,
-    StudentName VARCHAR(20) NOT NULL,
-    DOB DATE,
-    Gender VARCHAR(10),
-    DepartmentID INT(5),
-    Email VARCHAR(30),
-    PhoneNumber BIGINT
-);
 USE CollegeDBBCA;
 INSERT INTO STUDENT1(StudentID,StudentName,Gender,DepartmentID) VALUES (1001,"Arun","Male",101);
 INSERT INTO STUDENT1(StudentID,StudentName,Gender,DepartmentID) VALUES(1002,"Divya","Female",102);
